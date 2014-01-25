@@ -1,0 +1,1 @@
+<p>&copy; <?php echo date("Y"); ?> Drake Schaberg. All rights reserved.</p>
