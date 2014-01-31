@@ -7,7 +7,11 @@
    		<link href="style.css" rel="stylesheet" type="text/css" media="all">
    		
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script type="text/javascript"src="//use.edgefonts.net/strumpf-std;open-sans;source-sans-pro;acme.js"></script> 
+		<script type="text/javascript" src="js/parallax-script.js"></script>
+		<script type="text/javascript" src="js/waypoints.min.js"></script>
+		<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+		<script type="text/javascript" src="fancy/slimbox/js/slimbox2.js"></script>
+		<script type="text/javascript"src="//use.edgefonts.net/strumpf-std;exo;syncopate;open-sans;source-sans-pro.js"></script> 
 	</head>
 	<body cz-shortcut-listen="true">
 		<!---start-nav----->
@@ -30,7 +34,7 @@
 				<!---/end-nav----->
 		<!---start-wrap----->
 			<!---start-header----->
-			<div class="header" id="home">
+			<div class="header" id="home" style="background-image: url(images/header-bg.jpg); "data-slide="2" data-stellar-background-ratio=".5">
 				<div class="wrap">
 				
 			<!---End-header----->
@@ -57,17 +61,17 @@
 			<!---start-top-grids---->
 				<div class="top-service-grids" id="services">
 					<div class="top-service-grid">
-						<a href="#"><img src="images/top-grid-pic1.png" alt=""></a>
+						<a class="float-shadow"><img src="images/top-grid-pic1.png" alt=""></a>
 						<a href="#"><span>Graphic Design</span></a>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporUt enim ad minim veniam</p>
 					</div>
 					<div class="top-service-grid">
-						<a href="#"><img src="images/top-grid-pic2.png" alt=""></a>
+						<a class="float-shadow"><img src="images/top-grid-pic2.png" alt=""></a>
 						<a href="#"><span>Illustration</span></a>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporUt enim ad minim veniam</p>
 					</div>
 					<div class="top-service-grid">
-						<a href="#"><img src="images/top-grid-pic4.png" alt=""></a>
+						<a class="float-shadow"><img src="images/top-grid-pic4.png" alt=""></a>
 						<a href="#"><span>Browser Compatibility</span></a>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporUt enim ad minim veniam</p>
 					</div>
@@ -75,112 +79,115 @@
 				</div>
 			<!---End-top-grids---->
 			</div>
+			
+			
 			<!---start-recent-works----->
-			<div class="recent-works" id="portfolio">
+			<div class="recent-works" id="portfolio"  data-slide="2" data-stellar-background-ratio=".5">
 				<div class="wrap">
 				<div class="recent-works-head">
-					<h3>Recent works</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporUt enim ad minim veniam</p>
+					<h3>My Work</h3>
+					<p>This is some of the more recent work I have done</p>
 				</div>
 				<!---start-mfp ---->	
 			<div id="small-dialog1" class="mfp-hide">
-				<div class="pop_up">
-					<h2>Yours text place Here</h2>
-					<p class="para">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.</p>
-				</div>
+					
+				
 			</div>
 			<!---end-mfp ---->
-				<div class="gallery">
+				<div class="gallery popup-gallery">
 					<div class="clear"> </div>
 					<div class="container">
 					<ul id="filters" class="clearfix">
-						<li><span class="filter active" data-filter="app card icon logo web">All</span></li>
+						<li><span class="filter active" data-filter="des ill web logo app">All</span></li>
 						<li><span class="filter" data-filter="app web">Web</span></li>
-						<li><span class="filter" data-filter="icon web card">Illustration</span></li>
-						<li><span class="filter" data-filter="web app icon card">Photography</span></li>
-						<li><span class="filter" data-filter="icon app web logo">Design</span></li>
+						<li><span class="filter" data-filter="ill logo">Illustration</span></li>
+						<li><span class="filter" data-filter="des">Design</span></li>
 					</ul>
-						<div id="portfoliolist" style="     ">
-						<div class="portfolio logo1 mix_all" data-cat="logo" style="display: inline-block; opacity: 1;">
+						<div class="popup-gallery" id="portfoliolist">
+						<!---Item 1 ---->
+						<div class="portfolio ill mix_all" data-cat="ill" style="display: inline-block; opacity: 1;">
 							<div class="portfolio-wrapper">				
-								<a class="popup-with-zoom-anim" href="#small-dialog1">
-									<img src="images/p1.jpg" alt="Image 2" style="top: 0px;">
+								<a id="mgallery" href="images/portfolio/uncomfort.png"  title="Uncomfortable">
+									<img src="images/portfolio/uncomfort-th.png" alt="Image 2">
 								</a>
 								<div class="label" style="bottom: -40px;">
 									<div class="label-text">
-										<a class="text-title">Bird Document</a>
+										<div class="text-title">Bird Document</div>
 										<span class="text-category">Logo</span>
 									</div>
 									<div class="label-bg"></div>
 								</div>
 							</div>
-						</div>				
-						<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						</div>		
+							<!---Item 2---->		
+						<div class="portfolio app mix_all" data-cat="des" style="display: inline-block; opacity: 1;">
 							<div class="portfolio-wrapper">			
-								<a class="popup-with-zoom-anim" href="#small-dialog1">
+								<a  href="images/portfolio/candel_01.png" title="Sally" data-comp="bugface" >
 									<img src="images/p2.jpg" alt="Image 2" style="top: 0px;">
 								</a>
 								<div class="label" style="bottom: -40px;">
 									<div class="label-text">
-										<a class="text-title">Visual Infography</a>
+										<div class="text-title">Visual Infography</div>
 										<span class="text-category">APP</span>
 									</div>
 									<div class="label-bg"></div>
 								</div>
 							</div>
-						</div>		
-						<div class="portfolio web mix_all" data-cat="web" style="display: inline-block; opacity: 1;">
+						</div>	
+							<!---Item 3 ---->	
+						<div class="portfolio web mix_all" data-cat="des" style="display: inline-block; opacity: 1;">
 							<div class="portfolio-wrapper">						
-								<a class="popup-with-zoom-anim" href="#small-dialog1">
+								<a href="#small-dialog1" title="Yellow Snow">
 									<img src="images/p3.jpg" alt="Image 2" style="top: 0px;">
 								</a>
 								<div class="label" style="bottom: -40px;">
 									<div class="label-text">
-										<a class="text-title">Sonor's Design</a>
+										<div class="text-title">Sonor's Design</div>
 										<span class="text-category">Web design</span>
 									</div>
 									<div class="label-bg"></div>
 								</div>
 							</div>
-						</div>				
-						<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						</div>	
+							<!---Item 4 ---->			
+						<div class="portfolio ill mix_all" data-cat="web" style="display: inline-block; opacity: 1;">
 							<div class="portfolio-wrapper">			
-								<a class="popup-with-zoom-anim" href="#small-dialog1">
+								<a href="images/portfolio/candel_01.png" title="Toads">
 									<img src="images/p4.jpg" alt="Image 2" style="top: 0px;">
 								</a>
 								<div class="label" style="bottom: -40px;">
 									<div class="label-text">
-										<a class="text-title">Typography Company</a>
+										<div class="text-title">Typography Company</div>
 										<span class="text-category">Business card</span>
 									</div>
 									<div class="label-bg"></div>
 								</div>
 							</div>
 						</div>	
-									
-						<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+								<!---Item 5---->
+						<div class="portfolio des mix_all" data-cat="web" style="display: inline-block; opacity: 1;">
 							<div class="portfolio-wrapper">
-								<a class="popup-with-zoom-anim" href="#small-dialog1">
+								<a id="mgallery" class="popup-with-zoom-anim" href="#small-dialog1">
 									<img src="images/p5.jpg" alt="Image 2" style="top: 0px;">
 								</a>
 								<div class="label" style="bottom: -40px;">
 									<div class="label-text">
-										<a class="text-title">Weatherette</a>
+										<div class="text-title">Weatherette</div>
 										<span class="text-category">APP</span>
 									</div>
 									<div class="label-bg"></div>
 								</div>
 							</div>
 						</div>			
-						
-						<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+							<!---Item 6---->
+						<div class="portfolio des mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
 							<div class="portfolio-wrapper">			
-								<a class="popup-with-zoom-anim" href="#small-dialog1">
+								<a id="mgallery" class="popup-with-zoom-anim" href="#small-dialog1">
 									<img src="images/p6.jpg" alt="Image 2" style="top: 0px;">
 								</a>
 								<div class="label" style="bottom: -40px;">
 									<div class="label-text">
-										<a class="text-title">BMF</a>
+										<div class="text-title">BMF</div>
 										<span class="text-category">Business card</span>
 									</div>
 									<div class="label-bg"></div>
@@ -254,6 +261,8 @@
 							});
 							</script>
 				<!---//End-gallery-script----->
+				
+				
 				<div class="clear"> </div>
 				</div>
 			</div>
@@ -261,7 +270,7 @@
 			<!---End-recent-works----->
 			
 			<!---start-meet-our-team---->
-			<div class="team">
+			<div class="team" id="blog">
 				<div class="wrap">
 					<div class="team-head">
 						<h3>Meet Our team</h3>
@@ -322,20 +331,36 @@
 				<div class="wrap">
 				<div class="contact-head">
 					<h3>Contact Me</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. Mauris faucibus tellus ac auctor posuere.</p>	
+					<p>Have a question or comment? Let me know!</p>	
 				</div>
 				<div class="contatct-form">
-					<form>
-						<input type="text" value="Name :" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name :';}">
-						<input type="text" value="Email :" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email :';}">
-						<textarea rows="2" cols="70" onfocus="if(this.value == 'Message :') this.value='';" onblur="if(this.value == '') this.value='Message :';">Message :</textarea>
-						<input type="submit" value="Send">
-					</form>
+					<form method="post" action="process.php">
+		<div>
+			<label class="contact-label" for="name">Name</label>
+			<input name="name" type="text" id="name" placeholder="your full name">
+		</div>
+		<div>
+			<label class="contact-label" for="email">Email Address</label>
+			<input name="email" type="email" id="email" placeholder="your email address">
+		</div>
+		<div>
+			<label class="contact-label" for="comm">Comments</label>
+			<textarea name="comments" rows="10" id="comm" placeholder="say something"></textarea>
+		</div>
+		<div class="hide">
+			<label class="contact-label" for="spam">What is two plus two?</label>
+			<input name="spam" type="text" size="4" id="spam">
+		</div>
+		<div>
+			<input type="submit" name="submit" value="Send">
+		</div>
+	</form>
 				</div>
 			</div>
 			</div>
 			<!---End-contact---->
-		</div><div id="flb-lightbox" style="position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 1000; box-sizing: content-box; display: none;"><div id="flb-lightbox-background" style="width: 100%; height: 100%; background-color: #000; opacity:0.8; box-sizing: content-box; -moz-box-sizing: content-box; -webkit-box-sizing: content-box;"></div><div id="flb-lightbox-content" style="position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; background-image: none; text-align: center; box-sizing: content-box; display: none; background-position: initial initial; background-repeat: initial initial;"></div><div id="flb-load" style="position: fixed; top: 40%; left: 0px; width: 100%; text-align: center; font-size: 14px; color: #fff; opacity: 0.3; box-sizing: content-box; -moz-box-sizing: content-box; -webkit-box-sizing: content-box;"></div><div id="flb-lightbox-text" style="position: fixed; bottom: 0px; width: 90%; padding: 15px 6% 15px 5%; margin-right: auto; margin-left: auto; background-color: rgb(255, 255, 255); opacity: 0.8; font-size: 14px; line-height: 1.4; color: rgb(0, 0, 0); text-align: center; box-sizing: content-box; display: none;"></div><div id="flb-load2" style="position: fixed; top: 40%; left: 0px; width: 100%; text-align: center; font-size: 14px; color: #fff; opacity: 0.3;"></div></div>
+		</div>
+		
 		<!---End-content---->
 		<!----start-footer---->
 		<div class="footer">
@@ -360,6 +385,7 @@
 					<!----move-top-path---->
 					<script type="text/javascript" src="js/move-top.js"></script>
 					<script type="text/javascript" src="js/easing.js"></script>
+					
 					<script type="text/javascript">
 						jQuery(document).ready(function($) {
 							$(".scroll").click(function(event){		

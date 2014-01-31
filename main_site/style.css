@@ -1,9 +1,11 @@
 /* CSS Document */
-
+@import 'css/mcrooster.css';
 @import 'css/magnific-popup.css';
 @import 'css/screen.css';
 @import 'css/simptip-mini.css';
-@import 'css/mcrooster.css';
 @import 'css/slider-demo.css';
 @import 'css/slider-style.css';
+@import 'css/parallax-style.css';
+@import 'css/hovery.css';
+@import 'fancy/slimbox/css/slimbox2.css';
 

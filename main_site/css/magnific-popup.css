@@ -114,10 +114,10 @@
 
 button.mfp-close,
 button.mfp-arrow {
-  overflow: visible;
+  overflow: hidden;
   cursor: pointer;
   background: transparent;
-  border: 0;
+  border: none;
   -webkit-appearance: none;
   display: block;
   padding: 0;
@@ -209,28 +209,32 @@ button::-moz-focus-inner {
 .mfp-arrow .mfp-b {
   border-top-width: 21px;
   border-bottom-width: 21px; }
-
+/*
 .mfp-arrow-left {
   left: 0; }
+  /*Inner Arrow Color*/
   .mfp-arrow-left:after,
   .mfp-arrow-left .mfp-a {
-    border-right: 17px solid white;
+    border-right: 17px solid #C3C3C3;
     margin-left: 31px; }
+	/*Outer Arrow Color*/
   .mfp-arrow-left:before,
   .mfp-arrow-left .mfp-b {
     margin-left: 25px;
-    border-right: 27px solid #3f3f3f; }
-
-.mfp-arrow-right {
-  right: 0; }
+    border-right: 27px solid #3F3F3F; }
+	
+	/*Inner Arrow Color*/
+	.mfp-arrow-right {
+	  right: 0; }
   .mfp-arrow-right:after,
   .mfp-arrow-right .mfp-a {
-    border-left: 17px solid white;
+    border-left: 17px solid #C3C3C3;
     margin-left: 39px; }
+	/*Outer Arrow Color*/
   .mfp-arrow-right:before,
   .mfp-arrow-right .mfp-b {
     border-left: 27px solid #3f3f3f; }
-
+*/
 .mfp-iframe-holder {
   padding-top: 40px;
   padding-bottom: 40px; }
@@ -303,12 +307,22 @@ img.mfp-img {
   line-height: 18px;
   color: #f3f3f3;
   word-break: break-word;
-  padding-right: 36px; }
+  padding-right: 1.5em;
+  }
 
-.mfp-figure small {
+
+.mpf-company {
   color: #bdbdbd;
   display: block;
-  font-size: 12px;
+  font-size: .8em;
+  font-style:italic;
+  line-height: 2em; 
+   letter-spacing: .03em;}
+  
+.mpf-author {
+  color: #bdbdbd;
+  display: block;
+  font-size: .7em;
   line-height: 14px; }
 
 .mfp-image-holder .mfp-content {
@@ -492,4 +506,27 @@ img.mfp-img {
 	font-size: 1em;
 	color: #555555;
 	line-height: 1.8em;
+}
+/* Zoom */
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  /* ideally, transition speed should match zoom duration */
+  -webkit-transition: all 0.3s ease-out; 
+  -moz-transition: all 0.3s ease-out; 
+  -o-transition: all 0.3s ease-out; 
+  transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+    opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+    opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0;
 }
