@@ -6,8 +6,8 @@
 		
    		<link href="style.css" rel="stylesheet" type="text/css" media="all">
    		
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script type="text/javascript" src="js/parallax-script.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>		
+		<script type="text/javascript" src="js/parallax/requestAnimationFrame.js"></script>
 		<script type="text/javascript" src="js/waypoints.min.js"></script>
 		<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
 		<script type="text/javascript" src="fancy/slimbox/js/slimbox2.js"></script>
@@ -17,7 +17,7 @@
 		<!---start-nav----->
 	<div class="top-header">
 					<div class="logo">
-						<a href="index.html">Drake Schaberg</a>
+						<a href="index.html">drakeschaberg.com</a>
 					</div>
 					<div class="top-nav">
 						<ul>
@@ -34,7 +34,46 @@
 				<!---/end-nav----->
 		<!---start-wrap----->
 			<!---start-header----->
-			<div class="header" id="home" style="background-image: url(images/header-bg.jpg); "data-slide="2" data-stellar-background-ratio=".5">
+			<div class="scene-container">
+			<ul class="top-scene" id="scene" data-calibrate-x="false"
+			  data-calibrate-y="true"
+			  data-invert-x="false"
+			  data-invert-y="true"
+			  data-limit-x="false"
+			  data-limit-y="10"
+			  data-scalar-x="2"
+			  data-scalar-y="8"
+			  data-friction-x="0.2"
+			  data-friction-y="0.8">
+  <li class="layer" data-depth="0.00"><img src="images/p3.jpg"></li>
+  <li class="layer" data-depth="0.20"><img src="images/p3.jpg"></li>
+  <li class="layer" data-depth="0.40"><img src="images/p3.jpg"></li>
+  <li class="layer" data-depth="0.60"><img src="images/p3.jpg"></li>
+  <li class="layer" data-depth="0.80"><img src="images/p3.jpg"></li>
+  <li class="layer" data-depth="1.00"><img src="images/p3.jpg"></li>
+</ul>
+</div>
+<!-- Scripts -->
+	<script src="js/parallax/parallax.js"></script>
+	<script>
+
+	// boom?
+	var scene = document.getElementById('scene');
+var parallax = new Parallax(scene, {
+  calibrateX: false,
+  calibrateY: true,
+  invertX: false,
+  invertY: true,
+  limitX: false,
+  limitY: 10,
+  scalarX: 2,
+  scalarY: 8,
+  frictionX: 0.2,
+  frictionY: 0.8
+});
+
+	</script>
+			<div class="header" id="home" style="background-image: url(images/header-bg.jpg); " data-slide="2" data-stellar-background-ratio=".5">
 				<div class="wrap">
 				
 			<!---End-header----->
@@ -83,6 +122,7 @@
 			
 			<!---start-recent-works----->
 			<div class="recent-works" id="portfolio"  data-slide="2" data-stellar-background-ratio=".5">
+			
 				<div class="wrap">
 				<div class="recent-works-head">
 					<h3>My Work</h3>
@@ -196,10 +236,8 @@
 						</div>	
 					</div>
 				</div><!-- container -->
-				<a class="morebtn popup-with-zoom-anim" href="#small-dialog1">Show More</a>
 				<div class="clear"> </div>
-				<script type="text/javascript" src="js/fliplightbox.min.js"></script>
-				<script type="text/javascript">$('body').flipLightBox()</script>
+				
 				<!---start-gallery-script----->
 					<script type="text/javascript" src="js/jquery.easing.min.js"></script>	
 					<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
@@ -356,6 +394,7 @@
 		</div>
 	</form>
 				</div>
+			
 			</div>
 			</div>
 			<!---End-contact---->
