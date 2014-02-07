@@ -1,5 +1,5 @@
 <html class=" js cssanimations csstransitions"><head>
-		<title>Drake Schaberg</title>
+		<title>Drake Schaberg's Ekard Studios</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="shortcut icon" type="image/x-icon" href="images/fave-icon.png">
 		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
@@ -7,24 +7,25 @@
    		<link href="style.css" rel="stylesheet" type="text/css" media="all">
    		
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>		
-		<script type="text/javascript" src="js/parallax/requestAnimationFrame.js"></script>
 		<script type="text/javascript" src="js/waypoints.min.js"></script>
+		<script type="text/javascript" src="js/parallax-script.js"></script>
 		<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
 		<script type="text/javascript" src="fancy/slimbox/js/slimbox2.js"></script>
-		<script type="text/javascript"src="//use.edgefonts.net/strumpf-std;exo;syncopate;open-sans;source-sans-pro.js"></script> 
+		<script type="text/javascript"src="//use.edgefonts.net/strumpf-std;syncopate;open-sans;source-sans-pro.js"></script>
+		<script src="//use.edgefonts.net/exo:n1,i1,n2,i2,n3,i3,n4,i4,n5,i5,n6,i6,n7,i7,n8,i8,n9,i9.js"></script> 
 	</head>
 	<body cz-shortcut-listen="true">
 		<!---start-nav----->
 	<div class="top-header">
 					<div class="logo">
-						<a href="index.html">drakeschaberg.com</a>
+						<a href="#home">ekardstudios</a>
 					</div>
 					<div class="top-nav">
 						<ul>
-							<li><a href="#home" class="scroll">Home</a></li>
 							<li><a href="#services" class="scroll">Services</a></li>
 							<li><a href="#portfolio" class="scroll">Portfolio</a></li>
-							<li><a href="#blog" class="scroll">Blog</a></li>
+							<li><a href="#about" class="scroll">About</a></li>
+							<li><a href="#testmon" class="scroll">Reviews</a></li>
 							<li><a href="#contact" class="scroll">Contact</a></li>
 							<div class="clear"> </div>
 						</ul>
@@ -34,63 +35,16 @@
 				<!---/end-nav----->
 		<!---start-wrap----->
 			<!---start-header----->
-			<div class="scene-container">
-			<ul class="top-scene" id="scene" data-calibrate-x="false"
-			  data-calibrate-y="true"
-			  data-invert-x="false"
-			  data-invert-y="true"
-			  data-limit-x="false"
-			  data-limit-y="10"
-			  data-scalar-x="2"
-			  data-scalar-y="8"
-			  data-friction-x="0.2"
-			  data-friction-y="0.8">
-  <li class="layer" data-depth="0.00"><img src="images/p3.jpg"></li>
-  <li class="layer" data-depth="0.20"><img src="images/p3.jpg"></li>
-  <li class="layer" data-depth="0.40"><img src="images/p3.jpg"></li>
-  <li class="layer" data-depth="0.60"><img src="images/p3.jpg"></li>
-  <li class="layer" data-depth="0.80"><img src="images/p3.jpg"></li>
-  <li class="layer" data-depth="1.00"><img src="images/p3.jpg"></li>
-</ul>
-</div>
-<!-- Scripts -->
-	<script src="js/parallax/parallax.js"></script>
-	<script>
-
-	// boom?
-	var scene = document.getElementById('scene');
-var parallax = new Parallax(scene, {
-  calibrateX: false,
-  calibrateY: true,
-  invertX: false,
-  invertY: true,
-  limitX: false,
-  limitY: 10,
-  scalarX: 2,
-  scalarY: 8,
-  frictionX: 0.2,
-  frictionY: 0.8
-});
-
-	</script>
-			<div class="header" id="home" style="background-image: url(images/header-bg.jpg); " data-slide="2" data-stellar-background-ratio=".5">
-				<div class="wrap">
-				
-			<!---End-header----->
-			<!----start-content-slider---->
+			<div class="skrollr-wrapper" id="skrollr-body">
+			<div class="header" id="home" data-slide="2" data-stellar-background-ratio=".5">
+			<div class="overlay-bg">
+				<div class="wrap-top">
+				<div class="header-imagery">
+					<div class="header-head">
+					<h2>Drake</h2>
+				</div></div>
 			
-					<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-					<script src="js/jquery.cslider.js"></script>
-					<script>
-					//jQuery(document).ready(function() {
-					$('#da-slider').cslider({
-					  autoplay : true,
-					  interval: 3000,
-					  bgincrement : 10
-					});
-					//});
-					</script>
-		<!----start-content-slider---->
+			</div>
 			</div>
 		</div>
 		<!---End-header----->
@@ -98,21 +52,25 @@ var parallax = new Parallax(scene, {
 		<div class="content">
 			<div class="wrap">
 			<!---start-top-grids---->
-				<div class="top-service-grids" id="services">
+				<div class="top-service-container" id="services">
+				<div class="service-head">
+					<h3>Ho Ho</h3>
+					<p>This is some of the more recent work I have done</p>
+				</div>
 					<div class="top-service-grid">
-						<a class="float-shadow"><img src="images/top-grid-pic1.png" alt=""></a>
+						<a><img class="float-shadow" src="images/service-icon-2.png" alt=""></a>
 						<a href="#"><span>Graphic Design</span></a>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporUt enim ad minim veniam</p>
+						<p> Graphic design is making things look good. If people don't like what they see then they simply are turned away. Yes, I am left handed.</p>
 					</div>
 					<div class="top-service-grid">
-						<a class="float-shadow"><img src="images/top-grid-pic2.png" alt=""></a>
+						<a ><img class="float-shadow" src="images/service-icon-1.png" alt=""></a>
 						<a href="#"><span>Illustration</span></a>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporUt enim ad minim veniam</p>
+						<p>Illustration is so much fun. When it is coupled with graphic design, it is POWERFUL! The two really work side by side. I prefer to work bouncing back between the two, complimenting eachother along the way.</p>
 					</div>
 					<div class="top-service-grid">
-						<a class="float-shadow"><img src="images/top-grid-pic4.png" alt=""></a>
-						<a href="#"><span>Browser Compatibility</span></a>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporUt enim ad minim veniam</p>
+						<a><img class="float-shadow" src="images/service-icon-3.png" alt=""></a>
+						<a href="#"><span>Web Design</span></a>
+						<p>HTML/CSS is something I learned to love. Like Batman and Robin they work together so well. CSS is clearly Batman. In today's world responsive design is essential!</p>
 					</div>
 					<div class="clear"> </div>
 				</div>
@@ -122,7 +80,7 @@ var parallax = new Parallax(scene, {
 			
 			<!---start-recent-works----->
 			<div class="recent-works" id="portfolio"  data-slide="2" data-stellar-background-ratio=".5">
-			
+			<div class="overlay-bg">
 				<div class="wrap">
 				<div class="recent-works-head">
 					<h3>My Work</h3>
@@ -139,9 +97,9 @@ var parallax = new Parallax(scene, {
 					<div class="container">
 					<ul id="filters" class="clearfix">
 						<li><span class="filter active" data-filter="des ill web logo app">All</span></li>
-						<li><span class="filter" data-filter="app web">Web</span></li>
-						<li><span class="filter" data-filter="ill logo">Illustration</span></li>
 						<li><span class="filter" data-filter="des">Design</span></li>
+						<li><span class="filter" data-filter="ill logo">Illustration</span></li>
+						<li><span class="filter" data-filter="app web">Web</span></li>
 					</ul>
 						<div class="popup-gallery" id="portfoliolist">
 						<!---Item 1 ---->
@@ -305,61 +263,49 @@ var parallax = new Parallax(scene, {
 				</div>
 			</div>
 			</div>
+			</div>
 			<!---End-recent-works----->
 			
 			<!---start-meet-our-team---->
-			<div class="team" id="blog">
+			<div class="team" id="about">
 				<div class="wrap">
 					<div class="team-head">
-						<h3>Meet Our team</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. Mauris faucibus tellus ac auctor posuere.</p>
+						<h3>About</h3>
+						
 					</div>
-					<div class="team-members">
+					<div class="team-container">
 						<div class="team-member">
-							<span><a href="#"> </a></span>
-							<h4><a href="#">John Smith</a></h4>
-						   <label>Creative Director</label>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est.</p>
-							<ul>
-								<li>
-									</li><li><a class="facebook simptip-position-bottom simptip-movable" data-tooltip="Facebook" href="#"> </a></li>
-									<li><a class="twitter simptip-position-bottom simptip-movable" data-tooltip="Twitter" href="#"> </a></li>
-									<li><a class="pin simptip-position-bottom simptip-movable" data-tooltip="Pintrest" href="#"> </a></li>
-									<div class="clear"> </div>
-								
-							</ul>
+						<div class="about-portrait">
+							<img src="images/p4.jpg" alt="Image 2" style="top: 0px;">
 						</div>
-						<div class="team-member">
-							<span><a href="#"> </a></span>
-							<h4><a href="#">John Smith</a></h4>
-						   <label>Creative Director</label>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est.</p>
-							<ul>
-								<li>
-									</li><li><a class="facebook simptip-position-bottom simptip-movable" data-tooltip="Facebook" href="#"> </a></li>
-									<li><a class="twitter simptip-position-bottom simptip-movable" data-tooltip="Twitter" href="#"> </a></li>
-									<li><a class="pin simptip-position-bottom simptip-movable" data-tooltip="Pintrest" href="#"> </a></li>
-									<div class="clear"> </div>
-								
-							</ul>
+						<div class="about-content">
+							<h4>Drake Schaberg</h4>
+						   <label>Mr.Everything</label>
+							<p>Drake has been doing graphic design for 7 years and he is really getting good. What's that? You want him to do everything? Well, I got news for you. He can! His ability to be diversified in everything he does is one of his many talents.</p>
+							
+							</div>
 						</div>
-						<div class="team-member">
-							<span><a href="#"> </a></span>
-							<h4><a href="#">John Smith</a></h4>
-						   <label>Creative Director</label>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est.</p>
-							<ul>
-								<li>
-									</li><li><a class="facebook simptip-position-bottom simptip-movable" data-tooltip="Facebook" href="#"> </a></li>
-									<li><a class="twitter simptip-position-bottom simptip-movable" data-tooltip="Twitter" href="#"> </a></li>
-									<li><a class="pin simptip-position-bottom simptip-movable" data-tooltip="Pintrest" href="#"> </a></li>
-									<div class="clear"> </div>
-								
-							</ul>
-						</div>
+						
 						<div class="clear"> </div>
 						<div class="clear"> </div>
 					</div>
+				</div>
+			</div>
+			<!---//End-meet-our-team---->
+			<!---start-meet-our-team---->
+			<div class="testmon" id="testmon" data-slide="2" data-stellar-background-ratio=".5">
+			<div class="overlay-bg">
+				<div class="wrap">
+				<div class="testmon-grid">
+					<div class="speaker">
+					<h3>Jon Snow</h3>
+					<h4>The Wall</h4>
+					</div>
+					<blockquote>
+					<p>This is the greatest person ever in the history of the world. If you don't hire him, you are an idiot faced jerk who doens't have a life.</p>
+					</blockquote>
+					</div>
+				</div>
 				</div>
 			</div>
 			<!---//End-meet-our-team---->
@@ -433,8 +379,10 @@ var parallax = new Parallax(scene, {
 							});
 						});
 					</script>
+						<!----/skrollr-wrapper---->
+					</div>
 					<!----move-top-path---->
-			    <a href="#" id="toTop" style="display: none;"><span id="toTopHover"></span><span id="toTopHover" style="opacity: 1;"></span></a>
+			    <a href="#" id="toTop" style="display: none;"><span id="toTopHover"></span><span id="toTopHover" style="opacity: .8;"></span></a>
 
 					</div>
 					<div class="clear"> </div>
@@ -446,4 +394,5 @@ var parallax = new Parallax(scene, {
 	
 
 
-<a href="#" id="toTop">To Top</a></body></html>
+<a href="#" id="toTop">To Top</a>
+</body></html>
