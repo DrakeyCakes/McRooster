@@ -46,3 +46,50 @@
   transform: translateY(5px);
   /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
 }
+
+/* wiggler */
+
+/* safari and chrome */
+@-webkit-keyframes wiggle {
+	0% {-webkit-transform:rotate(4deg);}
+	50% {-webkit-transform:rotate(-4deg);}
+	100% {-webkit-transform:rotate(4deg);}
+}
+ 
+/* firefox */
+@-moz-keyframes wiggle {
+	0% {-moz-transform:rotate(4deg);}
+	50% {-moz-transform:rotate(-4deg);}
+	100% {-moz-transform:rotate(4deg);}
+}
+ 
+/* anyone brave enough to implement the ideal method */
+@keyframes wiggle {
+	0% {transform:rotate(4deg);}
+	50% {transform:rotate(-4deg);}
+	100% {transform:rotate(4deg);}
+}
+ 
+.wiggler:hover {
+	-webkit-animation: wiggle 2.0s infinite;
+	-moz-animation: wiggle 2.0s infinite;
+	animation: wiggle 2.0s infinite;
+	
+}
+
+/*TILTY*/
+.tilty {
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+ 
+.tilty:hover {
+  -webkit-transform: rotate(-10deg);
+     -moz-transform: rotate(-10deg);
+       -o-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
