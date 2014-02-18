@@ -2,8 +2,8 @@
 
 // Information to be modified
 
-$your_email = "ekardstudios@gmail.com"; // email address to which the form data will be sent
-$subject = "Contact Message"; // subject of the email that is sent
+$your_email = "drakeschaberg@gmail.com"; // email address to which the form data will be sent
+$subject = "You Have a Message Sir"; // subject of the email that is sent
 $thanks_page = "thanks.html"; // path to the thank you page following successful form submission
 $contact_page = "index.html"; // path to the HTML contact page where the form appears
 

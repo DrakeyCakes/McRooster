@@ -1686,7 +1686,7 @@ $(document).ready(function() {
 		image: {
 			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
 			titleSrc: function(item) {
-				return item.el.attr('title') + 
+				return item.el.attr('title') + '<div class="mfp-year">' + item.el.attr('data-year') + '</div>' +
 				'<div class="mpf-company">' + item.el.attr('data-comp') + '</div>';
 			}
 		}

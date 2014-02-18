@@ -215,7 +215,7 @@ button::-moz-focus-inner {
   /*Inner Arrow Color*/
   .mfp-arrow-left:after,
   .mfp-arrow-left .mfp-a {
-    border-right: 17px solid #C3C3C3;
+    border-right: 17px solid rgba(218,218,218,0.5);
     margin-left: 31px; }
 	/*Outer Arrow Color*/
   .mfp-arrow-left:before,
@@ -228,7 +228,7 @@ button::-moz-focus-inner {
 	  right: 0; }
   .mfp-arrow-right:after,
   .mfp-arrow-right .mfp-a {
-    border-left: 17px solid #C3C3C3;
+    border-left: 17px solid  rgba(218,218,218,0.5);
     margin-left: 39px; }
 	/*Outer Arrow Color*/
   .mfp-arrow-right:before,
@@ -304,7 +304,7 @@ img.mfp-img {
 
 .mfp-title {
   text-align: left;
-  line-height: 18px;
+  line-height: 1.1em;
   color: #f3f3f3;
   word-break: break-word;
   padding-right: 1.5em;
@@ -312,12 +312,20 @@ img.mfp-img {
 
 
 .mpf-company {
+	padding: .3em;
   color: #bdbdbd;
   display: block;
   font-size: .8em;
-  font-style:italic;
   line-height: 2em; 
    letter-spacing: .03em;}
+   
+   .mfp-year{
+  color: #bdbdbd;
+  display: block;
+  font-size: .8em;
+  line-height: 2em; 
+   letter-spacing: .03em;
+    font-style:italic;}
   
 .mpf-author {
   color: #bdbdbd;

@@ -95,7 +95,7 @@ img {
   font-style: normal; }
 
 body {
-  font-family: open sans, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+  font-family: open sans, arial;
   background: #FFF;
   font-size: 100%;
   background: #333333; }
@@ -108,7 +108,8 @@ body {
 /*---start-wrap---*/
 .wrap {
   width: 80%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 6em 0; }
 
 .wrap-top {
   width: 90%;
@@ -118,6 +119,37 @@ body {
 
 .anchor {
   width: 100%; }
+
+/*---start-divider---*/
+.divider .line {
+  width: 100%;
+  height: 5px;
+  background-color: white; }
+.divider .circle {
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 1% auto;
+  margin-top: -75px; }
+.divider img {
+  width: 67%;
+  display: block;
+  margin: auto;
+  padding-top: 25%;
+  position: inherit; }
+.divider .dots {
+  display: table;
+  margin: 0 auto;
+  margin-top: -97px; }
+.divider .small-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  float: left;
+  margin-left: 70px;
+  margin-right: 70px; }
 
 /*---start-header---*/
 .logo {
@@ -137,7 +169,7 @@ body {
     margin: 0px auto;
     font-size: 2em;
     font-weight: 600;
-    font-family: exo, sans-serif;
+    font-family: exo, open sans;
     color: #17191B;
     text-shadow: 1px 1px 1px #f8e38f;
     -webkit-transition: all .2s ease;
@@ -173,7 +205,7 @@ body {
     padding: 0.4em 1em;
     display: block;
     font-weight: 500;
-    font-family: exo, sans-serif;
+    font-family: exo, open sans;
     color: #333333;
     transition: ease 0.2s all;
     -webkit-transition: ease 0.2s all;
@@ -197,10 +229,9 @@ body {
     height: 100%; }
   .header .header-imagery {
     width: 100%;
-    height: 300px;
     background-size: cover;
     color: #f2cb2f;
-    font-family: exo, sans-serif; }
+    font-family: exo, open sans; }
   .header .header-head {
     margin-bottom: 4%;
     vertical-align: middle;
@@ -217,7 +248,7 @@ body {
     .header .header-head .logo-image {
       width: 200px;
       height: 200px;
-      background: url(../images/logo-white.png);
+      background: url(../images/drake-logo-gray.png);
       background-repeat: no-repeat;
       background-size: contain;
       display: block;
@@ -228,7 +259,7 @@ body {
       -moz-transition: 0.5s all;
       -o-transition: 0.5s all; }
     .header .header-head:hover .logo-image {
-      background: url(../images/logo-color.png);
+      background: url(../images/drake-logo.png) no-repeat;
       background-size: contain; }
 
 .da-title h3 {
@@ -257,7 +288,7 @@ body {
   .top-service-grid span {
     font-size: 1.5em;
     color: #21d5ff;
-    font-family: open sans, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    font-family: open sans, arial;
     font-weight: 900;
     margin: 1em 0 0.6em 0;
     display: block; }
@@ -273,7 +304,7 @@ body {
   .top-service-container .service-head h3 {
     color: #fdfdfd;
     font-size: 4.5em;
-    font-family: exo, sans-serif;
+    font-family: exo, open sans;
     text-transform: uppercase; }
   .top-service-container .service-head p {
     color: #333;
@@ -289,10 +320,6 @@ body {
   .recent-works .overlay-bg {
     background-color: rgba(0, 0, 0, 0.7);
     width: 100%; }
-
-.wrap {
-  padding: 4em 0;
-  z-index: 2; }
 
 .popup-gallery {
   max-width: 100%;
@@ -341,7 +368,7 @@ body {
   padding: 0;
   list-style: none;
   text-align: center;
-  font-family: exo, sans-serif; }
+  font-family: exo, open sans; }
   #filters li {
     display: inline-block; }
   #filters li span {
@@ -375,7 +402,7 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
-  width: 33%;
+  width: 20%;
   display: none;
   float: left;
   overflow: hidden;
@@ -467,7 +494,7 @@ body {
   .recent-works-head h3 {
     color: #f2cb2f;
     font-size: 4.5em;
-    font-family: exo, sans-serif;
+    font-family: exo, open sans;
     text-transform: uppercase; }
   .recent-works-head p {
     color: #fdfdfd;
@@ -483,18 +510,32 @@ body {
   .testmon .overlay-bg {
     background-color: rgba(0, 0, 0, 0.7);
     width: 100%; }
+  .testmon .wrap {
+    padding-bottom: 6em; }
+  .testmon .testmon-container {
+    display: inline-block; }
   .testmon .speaker {
     float: right;
-    font-family: exo, sans-serif;
+    font-family: exo, open sans;
     font-weight: 600;
     font-size: 1em;
     margin-right: 1.2em;
+    margin-top: -40px;
+    margin-bottom: .5em;
     text-align: right;
     width: 100%; }
     .testmon .speaker h3 {
       font-size: 1.5em;
-      color: #333333; }
+      text-decoration: underline; }
+    .testmon .speaker a h3:hover {
+      color: #21d5ff; }
     .testmon .speaker h4 {
+      color: #333333;
+      transition: 0.5s all;
+      -webkit-transition: 0.5s all;
+      -moz-transition: 0.5s all;
+      -o-transition: 0.5s all; }
+    .testmon .speaker h5 {
       font-style: italic;
       color: #333333;
       transition: 0.5s all;
@@ -502,7 +543,8 @@ body {
       -moz-transition: 0.5s all;
       -o-transition: 0.5s all; }
   .testmon .testmon-grid {
-    width: 50%; }
+    width: 50%;
+    float: left; }
     .testmon .testmon-grid:hover blockquote {
       border-color: #f2cb2f; }
   .testmon blockquote {
@@ -511,16 +553,16 @@ body {
     margin: 1.5em 10px;
     padding: 0.5em 10px;
     padding-top: 3em;
-    quotes: "\201C" "\201D" "\2018" "\2019";
+    padding-bottom: .8em;
+    quotes: "\201D" "\2018" "\2019";
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
     -o-transition: 0.5s all; }
   .testmon blockquote:before {
     color: #f2cb2f;
-    font-family: exo, sans-serif;
-    padding-top: .1em;
-    margin-left: -1%;
+    font-family: exo, open sans;
+    padding-top: .2em;
     position: absolute;
     content: open-quote;
     font-size: 8em;
@@ -648,7 +690,7 @@ body {
 .team-head h3 {
   color: #fdfdfd;
   font-size: 4.5em;
-  font-family: exo, sans-serif;
+  font-family: exo, open sans;
   text-transform: uppercase; }
 
 .team-head p {
@@ -673,7 +715,8 @@ body {
     margin: 0;
     overflow: hidden; }
     .team-member .about-portrait img {
-      max-width: 100%; }
+      max-width: 100%;
+      max-height: 100%; }
   .team-member .about-content {
     text-align: left;
     padding-left: 1em;
@@ -683,7 +726,7 @@ body {
     .team-member .about-content h4 {
       color: #21d5ff;
       font-size: 2.5em;
-      font-family: exo, sans-serif;
+      font-family: exo, open sans;
       text-transform: uppercase;
       margin: 0.5em 0 0 0;
       display: block; }
@@ -696,7 +739,7 @@ body {
     margin-right: 0; }
   .team-member label {
     color: #21d5ff;
-    font-family: trebuchet ms, open sans, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    font-family: open sans, arial;
     font-size: 1.5em;
     margin: 0.3em 0 0.5em 0;
     display: block;
@@ -720,83 +763,13 @@ body {
 .pin {
   background: url(../images/social-icons.png) no-repeat -120px 0px; }
 
-/*------recent-postings-----*/
-.recent-posts {
-  background: url(../images/post-bg.jpg);
-  padding: 4em 0; }
-
-.post-grids {
-  margin: 6em 0 1em; }
-
-.post-grid {
-  width: 29.33%;
-  float: left;
-  margin-right: 5%;
-  text-align: center;
-  background: #FFF;
-  padding-bottom: 1em;
-  margin-bottom: 5em;
-  box-shadow: 0px 0px 10px rgba(238, 238, 238, 0.08); }
-
-.post-grid:nth-child(3) {
-  margin-right: 0; }
-
-/*----recent-posts-head-----*/
-.recent-posts-head {
-  text-align: center; }
-
-.recent-posts-head h3 {
-  color: #FFF;
-  font-size: 4.5em;
-  font-family: exo, sans-serif;
-  text-transform: uppercase; }
-
-.recent-posts-head p {
-  color: #EEE;
-  line-height: 1.5em;
-  width: 50%;
-  margin: 0 auto; }
-
-.post-grid span {
-  background: #E9E9E9;
-  width: 100%;
-  padding: 4em 0px;
-  display: block;
-  cursor: pointer; }
-
-.post-grid span a {
-  width: 80px;
-  height: 80px;
-  display: inline-block;
-  background: url(../images/post-icon.png) no-repeat; }
-
-.post-grid h4 a {
-  color: #383838;
-  font-family: trebuchet ms, open sans, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
-  font-size: 1.8em;
-  margin: 1em 0 0em 0;
-  display: block;
-  font-weight: 900; }
-
-.post-grid p {
-  color: #909090;
-  width: 90%;
-  font-size: 1.1em;
-  margin: 1em auto;
-  line-height: 1.5em; }
-
-.post-grid label {
-  color: #545454;
-  font-size: 1.2em;
-  font-style: italic; }
-
 /*---start-contact----*/
 .contact-head {
   text-align: center; }
   .contact-head h3 {
     color: #fdfdfd;
     font-size: 4.5em;
-    font-family: exo, sans-serif;
+    font-family: exo, open sans;
     text-transform: uppercase; }
   .contact-head p {
     color: #fdfdfd;
@@ -820,27 +793,27 @@ body {
   border: none;
   outline: none;
   color: #222;
-  font-family: open sans, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+  font-family: open sans, arial;
   margin-bottom: 1em;
   margin-top: 1em; }
 
 ::-webkit-input-placeholder {
   color: #A3A3A3;
-  font-family: open sans, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif; }
+  font-family: open sans, arial; }
 
 :-moz-placeholder {
   /* Firefox 18- */
   color: #A3A3A3;
-  font-family: open sans, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif; }
+  font-family: open sans, arial; }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
   color: #A3A3A3;
-  font-family: open sans, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif; }
+  font-family: open sans, arial; }
 
 :-ms-input-placeholder {
   color: #A3A3A3;
-  font-family: open sans, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif; }
+  font-family: open sans, arial; }
 
 .contact-label {
   color: #21d5ff;
@@ -871,7 +844,7 @@ body {
   -webkit-transition: 0.5s all;
   -moz-transition: 0.5s all;
   -o-transition: 0.5s all;
-  font-family: open sans, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif; }
+  font-family: open sans, arial; }
 
 .contatct-form input[type="submit"]:hover {
   background: #f2cb2f;
@@ -971,7 +944,7 @@ body {
 
 /*---//End-wrap-----*/
 /*---start-responsive design----*/
-@media only screen and (max-width: 2000px) and (min-width: 640px) {
+@media only screen and (max-width: 3000px) and (min-width: 640px) {
   .top-header {
     position: fixed; }
 
@@ -982,13 +955,13 @@ body {
     width: 16.6%; } }
 @media only screen and (max-width: 1620px) and (min-width: 1040) {
   #portfoliolist .portfolio {
-    width: 20%; } }
-@media only screen and (max-width: 1440px) and (min-width: 1366px) {
+    width: 16.6%; } }
+@media only screen and (max-width: 1920px) and (min-width: 1366px) {
   .wrap {
     width: 80%; }
 
   #portfoliolist .portfolio {
-    width: 25%; }
+    width: 20%; }
 
   .morebtn {
     width: 12%; }
@@ -1039,6 +1012,9 @@ body {
   .morebtn {
     width: 14%; }
 
+  #portfoliolist .portfolio {
+    width: 25%; }
+
   .blog-grid-right {
     width: 59%; }
 
@@ -1070,6 +1046,9 @@ body {
 
   .wrap-top {
     padding: 8em 0; }
+
+  #portfoliolist .portfolio {
+    width: 33%; }
 
   .header {
     max-height: 500px; }
@@ -1254,8 +1233,6 @@ body {
   .team .about-portrait {
     width: 100%;
     margin-bottom: 1em; }
-    .team .about-portrait img {
-      height: 50%; }
   .team .about-content {
     text-align: center;
     width: 100%;
@@ -1409,8 +1386,6 @@ body {
   .team .about-portrait {
     width: 100%;
     margin-bottom: 1em; }
-    .team .about-portrait img {
-      height: 50%; }
   .team .about-content {
     text-align: center;
     width: 100%;
@@ -1603,8 +1578,6 @@ body {
   .team .about-portrait {
     width: 100%;
     margin-bottom: 1em; }
-    .team .about-portrait img {
-      height: 50%; }
   .team .about-content {
     text-align: center;
     width: 100%;

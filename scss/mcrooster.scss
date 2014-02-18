@@ -33,8 +33,8 @@ $sub-heading-B: $quadary-color;
 $body-text-B: $light-color;
 
 /*////////Font Schemes ///////////*/
-$font-one: open sans, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
-$font-two: exo, sans-serif;;
+$font-one: open sans, arial ;
+$font-two: exo, open sans;
 $font-three: trebuchet ms, $font-one;
 $font-four: poiret-one, sans-serif;
 $font-five: source-sans-pro, sans-serif;
@@ -124,6 +124,7 @@ body{
 .wrap{
 	width: 80%;
 	margin: 0 auto;
+	padding: 6em 0;	
 }
 .wrap-top{
 	width: 90%;
@@ -136,6 +137,47 @@ body{
 	width: 100%	;
 	
 }
+/*---start-divider---*/
+.divider{
+	.line{
+		width: 100%; 
+		height: 5px;
+		background-color: white;	
+	}
+	.circle{
+		width: 150px; 
+		height:150px; 
+		background-color:white; 
+		border-radius: 50%; 
+		margin: 1% auto;
+		margin-top: -75px;	
+	}
+	img{
+		width: 67%;
+		display: block;
+		margin: auto;
+		padding-top: 25%;
+		position: inherit;	
+	}
+	.dots{
+		display: table;
+		margin: 0 auto;
+		margin-top: -97px;
+	}
+	.small-circle{
+		width: 20px;
+		height:20px;
+		border-radius: 50%;
+		background-color: white;
+		float: left;
+		margin-left: 70px;
+		margin-right: 70px;
+	}
+	
+}
+
+
+
 /*---start-header---*/
 .logo {
 	float: left;
@@ -237,7 +279,6 @@ body{
 		}
 		.header-imagery{
 			width:100%;
-			height:300px;
 			background-size: cover;
 			color:$primary-color;
 			font-family: $font-two;
@@ -268,7 +309,7 @@ body{
 			.logo-image{
 				width: 200px;
 				height: 200px;
-				background: url(../images/logo-white.png) ;
+				background: url(../images/drake-logo-gray.png) ;
 				background-repeat:no-repeat;
 				background-size: contain;
 				  display: block;
@@ -281,7 +322,7 @@ body{
 			}
 			&:hover{
 				.logo-image{
-				background: url(../images/logo-color.png);
+				background: url(../images/drake-logo.png) no-repeat;
 				background-size: contain;
 				}
 			}
@@ -365,11 +406,7 @@ body{
 	
 }
 
-.wrap{
-	padding: 4em 0;	
-	z-index: 2;
-	
-}
+
 .popup-gallery{
 	max-width: 100%;
 	margin: 1%;
@@ -458,7 +495,7 @@ body{
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-o-box-sizing: border-box;
-	width: 33%;
+	width: 20%;
 	display:none;
 	float:left;
 	overflow:hidden;
@@ -520,6 +557,7 @@ body{
 		color: $label-text;
 	}
 }
+
 /* #Clearing */
 
 /* Self Clearing Goodness */
@@ -582,32 +620,55 @@ body{
 		background-color: rgba($bg-overlay-color,0.7);
 		width: 100%;
 	}
+	.wrap{
+		padding-bottom: 6em;	
+	}
+	.testmon-container{
+	display: inline-block;
+	}
 	.speaker{
 		float:right;
 		font-family: $font-two;
 		font-weight: 600;
 		font-size:1em;	
 		margin-right: 1.2em;
+		margin-top: -40px;
+		margin-bottom: .5em;
 		text-align:right;
 		width: 100%;
 		
 		
 		h3{
 		font-size:1.5em;
-		color: $dark-color;
+		text-decoration:underline;
+	
 		}
+		a h3:hover{
+		color: $sub-heading-B;	
+		}
+		
 		h4{
+		
+		color: $dark-color;
+		transition: 0.5s all;
+		-webkit-transition: 0.5s all;
+		-moz-transition: 0.5s all;
+		-o-transition: 0.5s all;
+		}
+		h5{
 		font-style: italic;
 		color: $dark-color;
 		transition: 0.5s all;
-				-webkit-transition: 0.5s all;
-				-moz-transition: 0.5s all;
-				-o-transition: 0.5s all;
+		-webkit-transition: 0.5s all;
+		-moz-transition: 0.5s all;
+		-o-transition: 0.5s all;
 		}
 	}
+
+		
 	.testmon-grid{
 		width: 50%;	
-	
+	float:left;
 		
 		&:hover{
 				
@@ -629,19 +690,19 @@ body{
 	  margin: 1.5em 10px;
 	  padding: 0.5em 10px;
 	  padding-top:	3em;
-	  quotes: "\201C""\201D""\2018""\2019";
+	  padding-bottom: .8em;
+	  quotes: "\201D""\2018""\2019";
 	  transition: 0.5s all;
 				-webkit-transition: 0.5s all;
 				-moz-transition: 0.5s all;
 				-o-transition: 0.5s all;
 	  
-	  
+	 
 	}
 	blockquote:before {
 	  color: $primary-color;
 	  font-family: $font-two;
-	  padding-top: .1em;
-		margin-left: -1%;
+	  padding-top: .2em;
 	  position: absolute;
 	  content: open-quote;
 	  font-size: 8em;
@@ -831,6 +892,7 @@ body{
 		overflow:hidden;
 		img{
 			max-width: 100%;
+			max-height: 100%;
 			
 
 		}
@@ -864,7 +926,7 @@ body{
 	}
 	label{
 		color: $sub-heading-B;
-		font-family: $font-three;
+		font-family: $font-one;
 		font-size: 1.5em;
 		margin: 0.3em 0 0.5em 0;
 		display: block;
@@ -893,76 +955,7 @@ body{
 .pin{
 	background: url(../images/social-icons.png) no-repeat -120px 0px;
 }
-/*------recent-postings-----*/
-.recent-posts{
-	background: url(../images/post-bg.jpg);
-	padding: 4em 0;
-}
-.post-grids {
-	margin: 6em 0 1em;
-}
-.post-grid{
-	width: 29.33%;
-	float: left;
-	margin-right: 5%;
-	text-align: center;
-	background: #FFF;
-	padding-bottom: 1em;
-	margin-bottom: 5em;
-	box-shadow: 0px 0px 10px rgba(238, 238, 238, 0.08);
-}
-.post-grid:nth-child(3){
-	margin-right:0;
-}
-/*----recent-posts-head-----*/
-.recent-posts-head{
-	text-align:center;
-}
-.recent-posts-head h3{
-	color: #FFF;
-	font-size: 4.5em;
-	font-family: $font-two;
-	text-transform: uppercase;
-}
-.recent-posts-head p{
-	color: #EEE;
-	line-height: 1.5em;
-	width: 50%;
-	margin: 0 auto;
-}
-.post-grid span{
-	background: #E9E9E9;
-	width: 100%;
-	padding: 4em 0px;
-	display: block;
-	cursor:pointer;
-}
-.post-grid span a{
-	width: 80px;
-	height: 80px;
-	display: inline-block;
-	background: url(../images/post-icon.png) no-repeat;
-}
-.post-grid h4 a{
-	color: #383838;
-	font-family: $font-three;
-	font-size: 1.8em;
-	margin: 1em 0 0em 0;
-	display: block;
-	font-weight: 900;
-}
-.post-grid p{
-	color: #909090;
-	width: 90%;
-	font-size: 1.1em;
-	margin: 1em auto;
-	line-height: 1.5em;
-}
-.post-grid label{
-	color:#545454;
-	font-size:1.2em;
-	font-style:italic;
-}
+
 /*---start-contact----*/
 .contact{
 }
@@ -1160,7 +1153,8 @@ body{
 }
 /*---//End-wrap-----*/
 /*---start-responsive design----*/
-@media only screen and (max-width: 2000px) and (min-width:640px) {
+
+@media only screen and (max-width: 3000px) and (min-width:640px) {
 	.top-header{
 		position: fixed	
 	}
@@ -1176,15 +1170,15 @@ body{
 }
 @media only screen and (max-width: 1620px) and (min-width:1040) {
 	#portfoliolist .portfolio {
-	width: 20%;
+	width: 16.6%;
 	}
 }
-@media only screen and (max-width: 1440px) and (min-width:1366px) {
+@media only screen and (max-width: 1920px) and (min-width:1366px) {
 	.wrap{
 		width:80%;
 	}
 	#portfoliolist .portfolio {
-	width: 25%;
+	width: 20%;
 	}
 	.morebtn {
 		width: 12%;
@@ -1242,6 +1236,9 @@ body{
 	.morebtn {
 		width: 14%;
 	}
+	#portfoliolist .portfolio {
+	width: 25%;
+	}
 	.blog-grid-right {
 		width: 59%;
 	}
@@ -1277,6 +1274,9 @@ body{
 	}
 	.wrap-top{
 	padding: 8em 0;
+	}
+	#portfoliolist .portfolio {
+	width: 33%;
 	}
 	.header{
 		max-height: 500px;
@@ -1487,7 +1487,7 @@ body{
 			margin-bottom: 1em;
 			
 			img{
-				height: 50%;	
+				
 			}
 		}
 		.about-content{
@@ -1656,7 +1656,7 @@ body{
 			width:100%;	
 			margin-bottom: 1em;
 			img{
-				height: 50%;	
+				
 			}
 		}
 		.about-content{
@@ -1865,7 +1865,7 @@ body{
 			width:100%;	
 			margin-bottom: 1em;
 			img{
-				height: 50%;	
+				
 			}
 		}
 		.about-content{
