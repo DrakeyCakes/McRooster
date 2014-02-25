@@ -16,6 +16,7 @@
 		<script type="text/javascript" src="js/active-scroll.js"></script>
 		<script type="text/javascript" src="js/jquery.stellar.min.js"></script>		
 		<script type="text/javascript" src="fancy/slimbox/js/slimbox2.js"></script>
+		<script type="text/javascript" src="fancy/fractionslider/js/jquery.fractionslider.min.js"></script>
 		<script type="text/javascript"src="//use.edgefonts.net/strumpf-std;syncopate;open-sans;source-sans-pro.js"></script>
 		<script src="//use.edgefonts.net/exo:n1,i1,n2,i2,n3,i3,n4,i4,n5,i5,n6,i6,n7,i7,n8,i8,n9,i9.js"></script> 
 		
@@ -61,25 +62,33 @@
 			
 			<!---start-top-grids---->
 				<div class="top-service-container" id="services">
+				<div class="divider">
+						<div class="line"></div>
+						<div class="tab" >	<div class="icon icon-gears" alt="Contact icon"></div></div>
+						<div class="dots">
+							<div class="small-circle one" ></div>
+							<div class="small-circle two" ></div>
+						</div>
+				</div>
 				<div class="wrap" >
 				<div class="service-head">
 					<h3>Services</h3>
-					<p>This is some of the more recent work I have done</p>
+					
 				</div>
 					<div class="top-service-grid">
 						<img class="float-shadow" src="images/service-icon-2.png" alt="">
 						<span>Graphic Design</span>
-						<p> Graphic design is making things look good. Technique comes second to talent, fortunately I have both. In case you are wondering, I am left handed.</p>
+						<p> Graphic design is making things look good. To really catch the eye of your viewers you need designs that are made for them, not for yourself.</p>
 					</div>
 					<div class="top-service-grid">
 						<img class="float-shadow" src="images/service-icon-1.png" alt="">
 						<span>Illustration</span>
-						<p>I prefer to work primarily with vector illustrations due to that fact that it can be any size. When  you pair graphic design with illustration, it can be a game changer.</p>
+						<p>I prefer to work primarily with vector illustrations due to that fact that it can be any size. Pairing graphic design with illustration is a powerful tool. Having trouble with your art assets matching the flavor of your design? I can make them feel like they were made for each other. </p>
 					</div>
 					<div class="top-service-grid">
 						<img class="float-shadow" src="images/service-icon-3.png" alt="">
 						<span>Web Design</span>
-						<p>HTML/CSS is something I learned to love. Making sites responsive to today's mobile devices is more work but it's also more fun.</p>
+						<p>HTML/CSS is something I learned to love. Making your sites viewable on any device is vital in today's world. I can turn your good looking site into a good looking responsive site.</p>
 					</div>
 					<div class="clear"> </div>
 				</div>
@@ -90,10 +99,18 @@
 			<!---start-recent-works----->
 			<div class="recent-works" id="portfolio"  data-slide="2" data-stellar-background-ratio=".5">
 			<div class="overlay-bg">
+			<div class="divider">
+						<div class="line"></div>
+						<div class="tab" >	<div class="icon icon-portfolio" alt="Portfolio icon"></div></div>
+						<div class="dots">
+							<div class="small-circle one" ></div>
+							<div class="small-circle two" ></div>
+						</div>
+				</div>
 				<div class="wrap">
 				<div class="recent-works-head">
 					<h3>My Work</h3>
-					<p>This is some of the more recent work I have done</p>
+					<p></p>
 				</div>
 				<!---start-mfp ---->	
 			<div id="small-dialog1" class="mfp-hide">
@@ -296,11 +313,30 @@
 								</div>
 							</div>
 						</div>	
+						<!---Item 10 ---->	
+						
+						<div class="portfolio web" data-cat="ill" style="display: inline-block; opacity: 1;">
+						
+							<div class="portfolio-wrapper">	
+												
+								<a href="images/portfolio/web-01.jpg" onClick="window.open('http://harderson.eex.io/' )" title="Harderson Website" data-year="2012" data-comp="Your typical chinses factory website doesn't look very pleasing to the eye. That's where I come along and make a site for them, which is perfect for their customers. Did I mention it's responsive! harderson.eex.io"><img src="images/portfolio/web-01th.jpg" alt="Image 2" style="top: 0px;"></a>
+								<div class="label" style="bottom: -40px;">
+									<div class="label-text">
+										<div class="text-title">Harderson</div>
+										<span class="text-category">Website</span>
+									</div>
+									<div class="label-bg"></div>
+								</div>
+							</div>
+						</div>	
+						
 							
 				
 				<!---End Gallery---->
 				</div>
-				</div></div><!-- container -->
+				</div>
+				</div>
+				<!-- container -->
 				<div class="clear"> </div>
 				
 				<!---start-gallery-script----->
@@ -368,6 +404,14 @@
 				
 				<div class="clear"> </div>
 				</div>
+				<div class="divider">
+						<div class="line"></div>
+						<div class="tab" >	<div class="icon icon-about" alt="About icon"></div></div>
+						<div class="dots">
+							<div class="small-circle one" ></div>
+							<div class="small-circle two" ></div>
+						</div>
+				</div>
 			</div>
 			</div>
 			</div>
@@ -394,6 +438,7 @@
 							</div>
 								<div class="awesomeness">
 								<div class="title">What percent awesome am I?</div>
+					<!---Thing 1----->
 				<div class="progress-bar-grid">
 				<div class="progress-label">Photoshop</div>
 					<div class="progress-bar blue stripes">
@@ -402,6 +447,7 @@
 						</span>
 					</div>
 				</div>
+				<!---Thing 2----->
 				<div class="progress-bar-grid">
 				<div class="progress-label">Illustrator</div>
 					<div class="progress-bar orange stripes">
@@ -410,6 +456,16 @@
 						</span>
 					</div>
 				</div>
+				<!---Thing 3----->
+				<div class="progress-bar-grid">
+				<div class="progress-label">InDesign</div>
+					<div class="progress-bar pink stripes">
+						<span style="width: 95%">
+							<div class="percentage">95%</div>
+						</span>
+					</div>
+				</div>
+				<!---Thing 4----->
 				<div class="progress-bar-grid">
 				<div class="progress-label">HTML / CSS</div>
 					<div class="progress-bar green stripes">
@@ -430,6 +486,14 @@
 			<!---start-testimonials---->
 			<div class="testmon" id="testmon" data-slide="2" data-stellar-background-ratio=".5">
 			<div class="overlay-bg">
+				<div class="divider">
+						<div class="line"></div>
+						<div class="tab" >	<div class="icon icon-testmon" alt="Testimonial icon"></div></div>
+						<div class="dots">
+							<div class="small-circle one" ></div>
+							<div class="small-circle two" ></div>
+						</div>
+				</div>
 				<div class="wrap">
 				<div class="testmon-container">
 							<!---testimony 1---->	
@@ -461,12 +525,12 @@
 				</div>
 				</div>
 				<div class="divider">
-				<div class="line"></div>
-				<div class="circle" >	<img src="images/icon-contact.png" alt="Contact icon"></div>
-				<div class="dots">
-				<div class="small-circle one" ></div>
-				<div class="small-circle two" ></div>
-				</div>
+					<div class="line"></div>
+					<div class="tab" >	<div class="icon icon-contact" alt="Contact icon"></div></div>
+					<div class="dots">
+						<div class="small-circle one" ></div>
+						<div class="small-circle two" ></div>
+					</div>
 			</div>
 			<!---//End-testimonials---->
 			<div class="clear"> </div>
