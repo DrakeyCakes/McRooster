@@ -1,10 +1,10 @@
 $(window).load(function(){
 	$('.slider').fractionSlider({
 		'fullWidth': 			true,
-		'controls': 			true, 
-		'pager': 				true,
+		'controls': 			false, 
+		'pager': 				false,
 		'responsive': 			true,
-		'dimensions': 			"1000,400",
+		'dimensions': 			"1400,400",
 	    'increase': 			false,
 		'pauseOnHover': 		true,
 		'slideEndAnimation': 	true
